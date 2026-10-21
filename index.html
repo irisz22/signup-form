@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sign Up Form</title>
+</head>
+<body>
+    <div class="main">
+        <div class="left-side">
+            <img src="background.jpg">
+
+            <div class="logo">
+                <img src="odin-lined.png">
+                <p>Odin</p>
+            </div>
+        </div>
+
+        <div class="right-side">
+            <div class="form-header">
+                <p>
+                    This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <i>now</i> to get started.
+                </p>
+
+                <p>You <i>know</i> you want to.</p>
+            </div>
+
+            <form action="" method="GET" id="my-form">
+                <p> Let's do this!</p>
+                <div class="row">
+                    <div class="form-elem">
+                        <label for="first_name">First Name</label>
+                        <input id="first_name" placeholder="Joe">
+                    </div>
+                    <div class="form-elem">
+                        <label for="last_name">Last Name</label>
+                        <input id="last_name" placeholder="Doe">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-elem">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="email@email.com">
+                    </div>
+                    <div class="form-elem">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" pattern="^[0-9]+$" placeholder="123 456 7890">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-elem">
+                        <label for="pw">Password</label>
+                        <input type="password" id="pw" required>
+                    </div>
+                    <div class="form-elem">
+                        <label for="confirm_pw">Confirm Password</label>
+                        <input type="password" id="confirm_pw" required>
+                    </div>
+                </div>
+            </form>
+
+            <button type="submit" form="my-form">Create Account</button>
+            <p class="info">Already have an account? <span>Log In</span></p>
+
+        </div>
+    </div>
+    
+</body>
+</html>
